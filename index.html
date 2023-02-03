@@ -1,14 +1,13 @@
 <html>
     <script type="text/javascript">
-        function openApp() {
-          var scheme = "myapp://";
-          var url = scheme + "login/tvs";
-          window.location = url;
-        }
-        setTimeout(function() {
-            window.onload = openApp;
-    }, 5000);
 
+    setTimeout(function() {
+    var url = "myapp://login/tvs";
+    var a = document.createElement("a");
+    a.setAttribute("href", url);
+    a.setAttribute("target", "_blank");
+    a.click();
+}, 5000);
       </script>
     <head>
 
