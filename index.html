@@ -1,10 +1,20 @@
 <html>
+    <script type="text/javascript">
+        function openApp() {
+          var scheme = "myapp://";
+          var url = scheme + "nl.";
+          window.location = url;
+        }
+        //window.onload = openApp;
+      </script>
     <head>
 
     </head>
     <body>
         <h1>
-            <a href="https://mfaheemrajput.github.io/deeplinktest">Open app</a>
+            <!-- <a href="https://mfaheemrajput.github.io/deeplinktest">Open app</a> -->
+            <button onclick="openApp()">Open App</button>
+
     </h1>
     </body>
 </html>
