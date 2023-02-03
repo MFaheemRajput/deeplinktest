@@ -1,13 +1,11 @@
 <html>
     <script type="text/javascript">
-
-    setTimeout(function() {
-    var url = "myapp://login/tvs";
-    var a = document.createElement("a");
-    a.setAttribute("href", url);
-    a.setAttribute("target", "_blank");
-    a.click();
-}, 5000);
+        function openApp() {
+          var scheme = "myapp://";
+          var url = scheme + "login/tvs";
+          window.location = url;
+        }
+        window.onload = openApp;
       </script>
     <head>
 
@@ -15,7 +13,7 @@
     <body>
         <h1>
             <!-- <a href="https://mfaheemrajput.github.io/deeplinktest">Open app</a> -->
-            Open App
+            <button onclick="openApp()">Open App</button>
 
     </h1>
     </body>
