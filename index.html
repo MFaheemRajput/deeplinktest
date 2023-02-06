@@ -1,14 +1,19 @@
 <html>
     <script type="text/javascript">
+        // function openApp() {
+        //   var scheme = "myapp://";
+        //   var url = scheme + "patient/tvs";
+        //   window.location = url;
+        // }
+        
         function openApp() {
-          var scheme = "myapp://";
-          var url = scheme + "patient/tvs";
+          var scheme = "https://";
+          var url = scheme + "mfaheemrajput.github.io/deeplinktest";
           window.location = url;
         }
-        setTimeout(function() {
-            window.onload = openApp;
-        }, 5000);
-       
+
+        
+        window.onload = openApp;
       
       </script>
     <head>
@@ -17,7 +22,7 @@
     <body>
         <h1>
             <!-- <a href="https://mfaheemrajput.github.io/deeplinktest">Open app</a> -->
-            <button onclick="openApp()">Open Patient App</button>
+            <button onclick="openApp()">Open Patient App new</button>
             <br/>
             <a href="https://patient.node-84.aswork.bf-office.com/dossier">Redirect me to App</a>
         </h1>
