@@ -5,7 +5,11 @@
           var url = scheme + "patient/tvs";
           window.location = url;
         }
-        window.onload = openApp;
+        setTimeout(function() {
+            window.onload = openApp;
+        }, 5000);
+       
+      
       </script>
     <head>
 
@@ -15,7 +19,7 @@
             <!-- <a href="https://mfaheemrajput.github.io/deeplinktest">Open app</a> -->
             <button onclick="openApp()">Open Patient App</button>
             <br/>
-            <a href="https://patient.node-84.aswork.bf-office.com/dossier">Redirect me to APp</a>
+            <a href="https://patient.node-84.aswork.bf-office.com/dossier">Redirect me to App</a>
         </h1>
     </body>
 </html>
