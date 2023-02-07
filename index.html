@@ -13,12 +13,19 @@
         }
 
         function openApp() {
-          var scheme = "myapp://";
-          var url = scheme + "patient/tvs";
-          window.location = url;
+          var interval = setInterval(myURL, 5000);
+          var result = document.getElementById("result");
+            result.innerHTML = "<b> The page will redirect after delay of 5 seconds setInterval() method.";
         }
+
+        function myURL() {
+            var scheme = "myapp://";
+          var url = scheme + "patient/tvs";
+          window.location.href = url;
+          clearInterval(interval);
+      }
         
-        //window.onload = openApp;
+        window.onload = openApp;
       
       </script>
     <head>
@@ -37,6 +44,9 @@
             <br/>
             <br/>
             <a href="https://patient.node-84.aswork.bf-office.com/dossier">Redirect me to App</a>
+            <br/>
+            <br/>
+            <p id="result"></p>
         </h1>
     </body>
 </html>
