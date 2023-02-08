@@ -6,26 +6,26 @@
         //   window.location = url;
         // }
         
-        function openHttpURL() {
-          var scheme = "https://";
-          var url = scheme + "mfaheemrajput.github.io/deeplinktest";
-          window.location = url;
-        }
+        // function openHttpURL() {
+        //   var scheme = "https://";
+        //   var url = scheme + "mfaheemrajput.github.io/deeplinktest";
+        //   window.location = url;
+        // }
 
-        function openApp() {
-          var interval = setInterval(myURL, 5000);
-          var result = document.getElementById("result");
-            result.innerHTML = "<b> The page will redirect after delay of 5 seconds setInterval() method.";
-        }
+        // function openApp() {
+        //   var interval = setInterval(myURL, 0000);
+        //   var result = document.getElementById("result");
+        //     result.innerHTML = "<b> The page will redirect after delay of 5 seconds setInterval() method.";
+        // }
 
         function myURL() {
             var scheme = "https://";
           var url = scheme + "mfaheemrajput.github.io/deeplinktest";
           window.location.href = url;
-          clearInterval(interval);
+          //clearInterval(interval);
       }
         
-        window.onload = openApp;
+        myURL();
       
       </script>
     <head>
