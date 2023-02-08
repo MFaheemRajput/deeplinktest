@@ -12,20 +12,20 @@
         //   window.location = url;
         // }
 
-        // function openApp() {
-        //   var interval = setInterval(myURL, 0000);
-        //   var result = document.getElementById("result");
-        //     result.innerHTML = "<b> The page will redirect after delay of 5 seconds setInterval() method.";
-        // }
+        function openApp() {
+          var interval = setInterval(myURL, 0000);
+          var result = document.getElementById("result");
+            result.innerHTML = "<b> The page will redirect after delay of 5 seconds setInterval() method.";
+        }
 
         function myURL() {
             var scheme = "https://";
           var url = scheme + "mfaheemrajput.github.io/home";
           window.location.href = url;
-          //clearInterval(interval);
+          clearInterval(interval);
       }
         
-        myURL();
+        window.onload = openApp();
       
       </script>
     <head>
