@@ -25,6 +25,8 @@
           clearInterval(interval);
       }
         
+        
+        
         function myURL2() {
             var scheme = "https://";
           var url = scheme + "star-shl-qa.brightfish.app/override-environment?&amp;tvsAddress=test-tvs.brightfish.nl&amp;appAddress=star-shl-qa.brightfish.app&amp;enableStandardUserAuth=1&amp;disableOverrideIndicator=0";
@@ -35,6 +37,13 @@
         function myURL3() {
             var scheme = "https://";
           var url = scheme + "star-shl-qa.brightfish.app/override-environment?tvsAddress=test-tvs.brightfish.nl\\&appAddress=star-shl-qa.brightfish.app\\&enableStandardUserAuth=1\\&disableOverrideIndicator=0";
+          window.location.href = url;
+          clearInterval(interval);
+      }
+        
+        function myURL4() {
+            var scheme = "https://";
+          var url = scheme + "star-shl-qa.brightfish.app/override-environment/?tvsAddress=test-tvs.brightfish.nl&appAddress=star-shl-qa.brightfish.app&enableStandardUserAuth=1&disableOverrideIndicator=0";
           window.location.href = url;
           clearInterval(interval);
       }
@@ -55,6 +64,9 @@
             <br/>
             <br/>
             <button style="height: 100px ; width:200px" onclick="myURL3()">Open queryLink3 App</button>
+            <br/>
+             <br/>
+            <button style="height: 100px ; width:200px" onclick="myURL4()">Open queryLink4 App</button>
             <br/>
 <!--             <br/>
             <a href="https://mfaheemrajput.github.io">https://mfaheemrajput.github.io</a>
